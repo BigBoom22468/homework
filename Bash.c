@@ -9,7 +9,7 @@
 int main() {
 	int fd;
 	pid_t pid;
-	fd = open("bash.txt", O_RDONLY);
+	fd = open("bash", O_RDONLY);
 	char c[2];
 	c[0] = '1';
 	char com[10000];
