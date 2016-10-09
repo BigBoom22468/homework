@@ -34,7 +34,6 @@ int main() {
 			com[0] = '0';
 		}
 	}
-	
 	return 0;
 }
 
