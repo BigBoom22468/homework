@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <malloc.h>
 
 void swap(int32_t* str, int32_t lhs, int32_t rhs) {
     int32_t tmp = str[lhs];
@@ -21,8 +22,9 @@ void insertion_sort(int32_t* str, int32_t lenght) {
     }
 }
 int main() {
-    int str[20], i, lenght;
+    int *str, i, lenght;
     scanf ("%d\n", &lenght);
+    str = calloc(lenght, sizeof(int));
     for (i = 0; i < lenght; i++) {
         scanf("%d,", &str[i]);
     }
