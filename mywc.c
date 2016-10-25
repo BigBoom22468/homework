@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-//program < text.txt >> text.txt
 int main() {
     char s;
     int line, word;
